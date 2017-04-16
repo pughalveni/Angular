@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",//Seeting ECMS script version to ES5
+    "module": "commonjs", //generates our module in commonjs format.
+    "moduleResolution": "node", 
+    "sourceMap": true, //option to generate source map file.
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [ "es2015", "dom" ],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    //all types packages will bee included.
+    "typeRoots": [
+      "../node_modules/@types/"
+    ]
+  },
+  "compileOnSave": true, //to generate all the files for the tsconfig.json upon save.
+  "exclude": [
+    "node_modules"
+    ] 
+}

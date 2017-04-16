@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular 4 Setup Application</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!--polyfills for older browser-->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <!--Angular uses zone for change detection and databinding-->
+    <script src="node_modules/zone.js/dist/zone.min.js"></script>    
+
+    <!--module Loader-->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+   <!-- system configiration file-->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <!-- content managed by Angular -->
+    <my-app>Loading...</my-app>
+  </body>
+
+</html>
